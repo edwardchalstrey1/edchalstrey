@@ -88,6 +88,12 @@ export const info = {
       date: "2023",
       link: "https://satre-specification.readthedocs.io/",
     },
+    {
+      published_in: "Nature: Scientific Data",
+      title: "A harmonised, high-coverage, open dataset of solar photovoltaic installations in the UK",
+      date: "2020",
+      link: "https://www.nature.com/articles/s41597-020-00739-0",
+    },
   ],
 
   contact: {

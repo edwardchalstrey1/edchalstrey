@@ -43,14 +43,12 @@ export default function ProjectCard(props: ProjectCardProps) {
                   </span>
                 ))}
               </div>
-              <p className="ml-auto text-sm font-medium text-gray-900">
-                {item.date}
-              </p>
+              <p className="ml-auto text-sm font-medium text-gray-900">{item.date}</p>
             </div>
           </div>
-          <div className="flex-shrink-0 w-full h-48 overflow-hidden">
+          <div className="flex-shrink-0 w-full overflow-hidden">
             <LazyLoadImage
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-cover"
               src={item.img_path}
               alt={item.img_alt}
               effect="blur"

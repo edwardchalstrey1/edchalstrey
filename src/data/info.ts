@@ -83,6 +83,11 @@ export const info = {
       date: "2025",
       link: "https://www.nature.com/articles/s41597-025-04516-9",
     },
+    {
+      title: "SATRE - a Standard Architecture for Trusted Research Environments (TREs)",
+      date: "2023",
+      link: "https://satre-specification.readthedocs.io/",
+    },
   ],
 
   contact: {

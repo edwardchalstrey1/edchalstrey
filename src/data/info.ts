@@ -49,7 +49,6 @@ export const info = {
   projects: [
     {
       title: "Autoemulate",
-      date: "2025",
       description:
         "ML Python package for creating fast, accurate emulators of complex simulations.",
       link: "https://www.autoemulate.com/",
@@ -59,7 +58,6 @@ export const info = {
     },
     {
       title: "Seshat Global History Databank",
-      date: "2023-2025",
       description:
         "Interactive maps for historical borders across time; enabling research into the evolution of human societies.",
       link: "https://seshat-db.com/core/world_map",
@@ -69,7 +67,6 @@ export const info = {
     },
     {
       title: "Data Safe Haven",
-      date: "2022-2024",
       description:
         "Infrastructure-as-code tools for Trusted Research Environments, enabling researchers to work with sensitive data.",
       link: "https://data-safe-haven.readthedocs.io/",

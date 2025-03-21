@@ -48,14 +48,14 @@ export const info = {
 
   projects: [
     {
-      title: "Bart's Prank Portfolio",
-      date: "2024",
+      title: "Autoemulate",
+      date: "2025",
       description:
-        "An interactive portfolio website showcasing my mischievous coding projects.",
-      link: "https://github.com/bartsimpsonfake/prank-portfolio",
-      tech: ["React", "Node.js", "MongoDB", "Sarcasm.js"],
-      img_alt: "Bart's Portfolio",
-      img_path: "/simpsons.png",
+        "ML Python package for creating fast, accurate emulators of complex simulations.",
+      link: "https://www.autoemulate.com/",
+      tech: ["Python", "Pytorch", "Astro.js"],
+      img_alt: "Autoemulate",
+      img_path: "/autoemulate.png",
     },
     {
       title: "Skateboard Shop",

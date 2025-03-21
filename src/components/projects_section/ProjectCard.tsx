@@ -14,7 +14,7 @@ export default function ProjectCard(props: ProjectCardProps) {
     <a
       href={item.link}
       rel="noreferrer"
-      className={`flex flex-col items-center justify-center border border-gray-300 ${
+      className={`flex flex-col items-center justify-between border border-gray-300 ${
         type === "projects"
           ? "bg-gray-100 dark:bg-dk-primary rounded-lg h-full p-4"
           : "bg-gray-100 dark:bg-dk-primary rounded-md p-4"
@@ -23,17 +23,8 @@ export default function ProjectCard(props: ProjectCardProps) {
     >
       {type === "projects" ? (
         <>
-          <div className="flex-shrink-0 w-full">
-            <LazyLoadImage
-              className="h-50 w-full object-cover"
-              src={item.img_path}
-              alt={item.img_alt}
-              width="100%"
-              effect="blur"
-            />
-          </div>
-          <div className="flex-1 flex flex-col justify-center items-center p-6">
-            <div className="flex-1 text-center">
+          <div className="flex-1 flex flex-col justify-between items-center p-6">
+            <div className="text-center">
               <p className="text-sm font-medium text-text dark:text-dk-text">
                 {item.title}
               </p>
@@ -41,7 +32,7 @@ export default function ProjectCard(props: ProjectCardProps) {
                 {item.description}
               </p>
             </div>
-            <div className="mt-6 flex items-center justify-center">
+            <div className="mt-6 flex items-center justify-center w-full">
               <div className="flex flex-wrap space-x-2">
                 {item.tech.map((tech) => (
                   <span
@@ -56,6 +47,14 @@ export default function ProjectCard(props: ProjectCardProps) {
                 {item.date}
               </p>
             </div>
+          </div>
+          <div className="flex-shrink-0 w-full h-48 overflow-hidden">
+            <LazyLoadImage
+              className="w-full h-full object-cover"
+              src={item.img_path}
+              alt={item.img_alt}
+              effect="blur"
+            />
           </div>
         </>
       ) : (

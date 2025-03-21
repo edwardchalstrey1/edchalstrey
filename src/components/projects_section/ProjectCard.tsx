@@ -10,7 +10,7 @@ export default function ProjectCard(props: ProjectCardProps) {
   const { project } = props;
 
   return (
-    <div className="flex flex-col bg-primary dark:bg-dk-primary rounded-lg">
+    <div className="flex flex-col bg-primary dark:bg-dk-primary rounded-lg h-full">
       <div className="flex-shrink-0">
         <a
           href={project.link}
@@ -18,7 +18,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           aria-label={project.img_alt + ", click to open the project page"}
         >
           <LazyLoadImage
-            className="h-52 w-full object-cover"
+            className="h-96 w-full object-cover" // Increased height to h-96
             src={project.img_path}
             alt={project.img_alt}
             width="100%"

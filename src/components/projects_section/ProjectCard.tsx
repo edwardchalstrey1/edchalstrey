@@ -13,6 +13,7 @@ export default function ProjectCard(props: ProjectCardProps) {
   return (
     <a
       href={item.link}
+      target="_blank"
       rel="noreferrer"
       className={`flex flex-col items-center justify-between border border-gray-300 ${
         type === "projects"

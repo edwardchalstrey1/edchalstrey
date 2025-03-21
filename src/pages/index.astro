@@ -44,7 +44,13 @@ const allPosts = await Astro.glob("./posts/*.md");
     class="lg:h-screen lg:m-0 my-20 mx-2 flex-col flex justify-center w-full"
     id="projects"
   >
-    <ProjectCarousel projects={info.projects} client:only />
+    <ProjectCarousel items={info.projects} type="projects" client:only />
+  </section>
+  <section
+    class="lg:h-screen lg:m-0 my-20 mx-2 flex-col flex justify-center w-full"
+    id="publications"
+  >
+    <ProjectCarousel items={info.publications} type="publications" client:only />
   </section>
 
   <section class="lg:m-0

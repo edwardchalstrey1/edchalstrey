@@ -7,8 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 import ProjectCard from "./ProjectCard";
 import { info } from "../../data/info";
 
-interface ProjectCarouselProps {
-  projects: (typeof info)["projects"];
+interface CarouselProps {
+  items: (typeof info)["projects"] | (typeof info)["publications"];
+  type: "projects" | "publications";
 }
 
 function CustomArrow(props: any) {
@@ -47,8 +48,8 @@ function CustomArrow(props: any) {
   );
 }
 
-export default function ProjectCarousel(props: ProjectCarouselProps) {
-  const { projects } = props;
+export default function ProjectCarousel(props: CarouselProps) {
+  const { items, type } = props;
   const initialMount = React.useRef(true);
 
   var settings = {
@@ -93,13 +94,15 @@ export default function ProjectCarousel(props: ProjectCarouselProps) {
 
   return (
     <>
-      <h1 className="text-3xl font-bold text-center mt-10 mb-5">My Projects</h1>
+      <h1 className="text-3xl font-bold text-center mt-10 mb-5">
+        {type === "projects" ? "My Projects" : "My Publications"}
+      </h1>
       <div className="flex justify-center flex-col items-center">
         <div className="slider-container w-5/6">
           <Slider {...settings}>
-            {projects.map((project, index) => (
+            {items.map((item, index) => (
               <div key={index} className="px-2">
-                <ProjectCard key={index} project={project} />
+                <ProjectCard key={index} item={item} type={type} />
               </div>
             ))}
           </Slider>

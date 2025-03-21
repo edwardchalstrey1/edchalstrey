@@ -3,24 +3,25 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 interface ProjectCardProps {
-  project: (typeof info)["projects"][number];
+  item: (typeof info)["projects"][number] | (typeof info)["publications"][number];
+  type: "projects" | "publications";
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
-  const { project } = props;
+  const { item, type } = props;
 
   return (
     <div className="flex flex-col bg-primary dark:bg-dk-primary rounded-lg h-full">
       <div className="flex-shrink-0">
         <a
-          href={project.link}
+          href={item.link}
           rel="noreferrer"
-          aria-label={project.img_alt + ", click to open the project page"}
+          aria-label={item.img_alt + ", click to open the page"}
         >
           <LazyLoadImage
-            className="h-96 w-full object-cover" // Increased height to h-96
-            src={project.img_path}
-            alt={project.img_alt}
+            className="h-96 w-full object-cover"
+            src={item.img_path}
+            alt={item.img_alt}
             width="100%"
             effect="blur"
           />
@@ -30,39 +31,41 @@ export default function ProjectCard(props: ProjectCardProps) {
         <div className="flex-1">
           <p className="text-sm font-medium text-text dark:text-dk-text">
             <a
-              href={project.link}
+              href={item.link}
               rel="noreferrer"
               className="hover:underline"
-              aria-label="Title of the project, click to open the project page"
+              aria-label="Title of the item, click to open the page"
             >
-              {project.title}
+              {item.title}
             </a>
           </p>
           <a
-            href={project.link}
+            href={item.link}
             rel="noreferrer"
             className="block mt-2"
-            aria-label="Description of the project, click to open the project page"
+            aria-label="Description of the item, click to open the page"
           >
             <p className="text-xl font-semibold text-gray-900">
-              {project.description}
+              {item.description}
             </p>
           </a>
         </div>
 
         <div className="mt-6 flex items-center">
-          <div className="flex flex-wrap space-x-2">
-            {project.tech.map((tech) => (
-              <span
-                className="text-accent dark:text-dk-accent text-xs font-semibold"
-                key={tech}
-              >
-                #{tech}
-              </span>
-            ))}
-          </div>
+          {type === "projects" && (
+            <div className="flex flex-wrap space-x-2">
+              {item.tech.map((tech) => (
+                <span
+                  className="text-accent dark:text-dk-accent text-xs font-semibold"
+                  key={tech}
+                >
+                  #{tech}
+                </span>
+              ))}
+            </div>
+          )}
           <p className="ml-auto text-sm font-medium text-gray-900">
-            {project.date}
+            {item.date}
           </p>
         </div>
       </div>

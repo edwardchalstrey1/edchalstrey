@@ -79,6 +79,39 @@ export const info = {
     },
   ],
 
+  publications: [
+    {
+      title: "Autoemulate",
+      date: "2025",
+      description:
+        "ML Python package for creating fast, accurate emulators of complex simulations.",
+      link: "https://www.autoemulate.com/",
+      tech: ["Python", "Pytorch", "Astro.js"],
+      img_alt: "Autoemulate",
+      img_path: "/autoemulate.png",
+    },
+    {
+      title: "Seshat Global History Databank",
+      date: "2023-2025",
+      description:
+        "Interactive maps for historical borders across time; enabling research into the evolution of human societies.",
+      link: "https://seshat-db.com/core/world_map",
+      tech: ["Django", "Python", "PostgreSQL", "Leaflet.js"],
+      img_alt: "Seshat Global History Databank",
+      img_path: "seshat.png",
+    },
+    {
+      title: "Data Safe Haven",
+      date: "2022-2024",
+      description:
+        "Infrastructure-as-code tools for Trusted Research Environments, enabling researchers to work with sensitive data.",
+      link: "https://data-safe-haven.readthedocs.io/",
+      tech: ["Pulumi", "Powershell", "Azure", "Docker"],
+      img_alt: "Data Safe Haven",
+      img_path: "dsh.png",
+    },
+  ],
+
   contact: {
     email: "bart@thesimpsons.com",
     linkedin: "https://www.linkedin.com/in/bartsimpsonfake",

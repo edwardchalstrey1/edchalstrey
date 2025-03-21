@@ -12,22 +12,22 @@ export default function ProjectCard(props: ProjectCardProps) {
 
   return (
     <div
-      className={`flex flex-col ${
+      className={`flex flex-col items-center justify-center border border-gray-300 ${
         type === "projects"
-          ? "bg-primary dark:bg-dk-primary rounded-lg h-full"
-          : "bg-secondary dark:bg-dk-secondary rounded-md p-4"
+          ? "bg-gray-100 dark:bg-dk-primary rounded-lg h-full p-4"
+          : "bg-gray-100 dark:bg-dk-secondary rounded-md p-4"
       }`}
     >
       {type === "projects" ? (
         <>
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 w-full">
             <a
               href={item.link}
               rel="noreferrer"
               aria-label={item.img_alt + ", click to open the page"}
             >
               <LazyLoadImage
-                className="h-96 w-full object-cover"
+                className="h-50 w-full object-cover"
                 src={item.img_path}
                 alt={item.img_alt}
                 width="100%"
@@ -35,8 +35,8 @@ export default function ProjectCard(props: ProjectCardProps) {
               />
             </a>
           </div>
-          <div className="flex-1 bg-primary dark:bg-dk-primary p-6 flex flex-col justify-between">
-            <div className="flex-1">
+          <div className="flex-1 flex flex-col justify-center items-center bg-gray-100 dark:bg-dk-primary p-6">
+            <div className="flex-1 text-center">
               <p className="text-sm font-medium text-text dark:text-dk-text">
                 <a
                   href={item.link}
@@ -59,7 +59,7 @@ export default function ProjectCard(props: ProjectCardProps) {
               </a>
             </div>
 
-            <div className="mt-6 flex items-center">
+            <div className="mt-6 flex items-center justify-center">
               <div className="flex flex-wrap space-x-2">
                 {item.tech.map((tech) => (
                   <span
@@ -77,7 +77,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           </div>
         </>
       ) : (
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center justify-center text-center">
           <a
             href={item.link}
             rel="noreferrer"
@@ -86,7 +86,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           >
             {item.title}
           </a>
-          <p className="text-sm text-gray-300 mt-2">{item.date}</p>
+          <p className="text-sm text-gray-400 mt-2">{item.date}</p>
         </div>
       )}
     </div>

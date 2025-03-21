@@ -16,8 +16,8 @@ export default function About(props: AboutProps) {
         <h1 className="text-4xl font-bold">About me</h1>
         <p className="text-2xl font-normal">{info.about.description}</p>
       </div>
-      <Education education={about.education} />
       <Experience experience={about.experience} />
+      <Education education={about.education} />
     </div>
   );
 }

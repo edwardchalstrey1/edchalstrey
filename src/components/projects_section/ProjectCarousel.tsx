@@ -56,7 +56,7 @@ export default function ProjectCarousel(props: ProjectCarouselProps) {
     infinite: true,
     speed: 1000,
     lazyLoad: true,
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,

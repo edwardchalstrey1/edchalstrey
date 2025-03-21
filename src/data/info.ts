@@ -1,19 +1,15 @@
 export const info = {
-  name: "Bart Simpson",
+  name: "Ed Chalstrey",
   brief_description:
-    "I'm a mischievous full stack developer with a knack for troublemaking.",
-  role: "Full Stack Developer",
+    "Developer and research scientist.",
+  role: "Research Data Scientist",
   picture: "/pic.png",
   picture_alt: "Bart Simpson",
-  location: "Springfield, USA",
+  location: "London, UK",
   cv: "/resume.pdf",
 
   about: {
-    description: `I'm a full stack developer with a passion for causing a little chaos in web development.
-    I have a solid foundation in computer science, although I prefer skateboarding over studying.
-    I excel in building web applications using React, Node.js, and MongoDB.
-    I'm known for my sharp wit and quick thinking, traits that serve me well in coding and pranks alike.
-    Looking for a challenge? Let's create something memorable together.`,
+    description: `I'm a developer with a background in academic research, currently employed at The Alan Turing Institute in London. My career has spanned a variety of research disciplines and has given me a broad technical skillset in data science and software engineering. I'm passionate about using technology to solve complex problems and make a positive impact on society. On my website, you can find links to my software repositories, notebooks, publications and blogs, as well as episode links for The Turing Podcast which I co-host.`,
     education: [
       {
         title: "Self-Taught Developer Extraordinaire",

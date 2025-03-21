@@ -44,7 +44,6 @@ export default function ProjectCard(props: ProjectCardProps) {
                   </span>
                 ))}
               </div>
-              <p className="ml-auto text-sm font-medium text-gray-900">{item.date}</p>
             </div>
           </div>
           <div className="flex-shrink-0 w-full overflow-hidden">

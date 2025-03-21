@@ -58,14 +58,14 @@ export const info = {
       img_path: "/autoemulate.png",
     },
     {
-      title: "Skateboard Shop",
-      date: "2023",
+      title: "Seshat Global History Databank",
+      date: "2023-2025",
       description:
-        "An e-commerce site selling skateboards and prank supplies. No bullies allowed!",
-      link: "https://github.com/bartsimpsonfake/skate-shop",
-      tech: ["React", "Node.js", "MongoDB", "Skateboard.js"],
+        "Interactive maps for historical borders across time; enabling research into the evolution of human societies.",
+      link: "https://seshat-db.com/core/world_map",
+      tech: ["Django", "Python", "PostgreSQL", "Leaflet.js"],
       img_alt: "Skateboard Shop",
-      img_path: "skateboard.png",
+      img_path: "seshat.png",
     },
     {
       title: "Comic Book Club",

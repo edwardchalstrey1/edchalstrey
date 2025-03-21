@@ -81,12 +81,14 @@ export default function ProjectCard(props: ProjectCardProps) {
           <a
             href={item.link}
             rel="noreferrer"
-            className="text-lg font-semibold text-white dark:text-dk-text hover:underline"
-            aria-label="Title of the publication, click to open the page"
+            className="flex flex-col items-center justify-center text-center border border-gray-300 bg-gray-100 dark:bg-dk-primary rounded-md p-4 hover:shadow-lg transition-shadow"
+            aria-label={`Title of the publication: ${item.title}, click to open the page`}
           >
-            {item.title}
+            <p className="text-lg font-semibold text-text dark:text-dk-text hover:underline">
+              {item.title}
+            </p>
+            <p className="text-sm text-gray-500 mt-2">{item.date}</p>
           </a>
-          <p className="text-sm text-gray-400 mt-2">{item.date}</p>
         </div>
       )}
     </div>

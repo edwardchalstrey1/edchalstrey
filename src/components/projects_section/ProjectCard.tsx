@@ -57,7 +57,10 @@ export default function ProjectCard(props: ProjectCardProps) {
         </>
       ) : (
         <div className="flex flex-col items-center justify-center text-center">
-          <p className="text-lg font-semibold text-text dark:text-dk-text">
+          <h3>
+            {item.published_in}
+          </h3>
+          <p className="text-lg font-semibold text-text dark:text-dk-text mt-2">
             {item.title}
           </p>
           <p className="text-sm text-gray-500 mt-2">{item.date}</p>

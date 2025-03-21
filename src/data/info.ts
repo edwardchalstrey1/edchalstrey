@@ -78,6 +78,7 @@ export const info = {
 
   publications: [
     {
+      published_in: "Nature: Scientific Data",
       title: "Cliopatria - A geospatial database of world-wide political entities from 3400BCE to 2024CE",
       date: "2025",
       link: "https://www.nature.com/articles/s41597-025-04516-9",

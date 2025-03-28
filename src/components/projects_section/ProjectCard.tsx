@@ -11,27 +11,30 @@ export default function ProjectCard(props: ProjectCardProps) {
   const { item, type } = props;
 
   return (
-    <a
-      href={item.link}
-      target="_blank"
-      rel="noreferrer"
+    <div
       className={`flex flex-col items-center justify-between border border-gray-300 ${
         type === "projects"
           ? "bg-gray-100 dark:bg-dk-primary rounded-lg h-full p-4"
           : "bg-gray-100 dark:bg-dk-primary rounded-md p-4"
       } hover:shadow-lg transition-shadow`}
-      aria-label={`Title of the ${type}: ${item.title}, click to open the page`}
+      aria-label={`Title of the ${type}: ${item.title}`}
     >
       {type === "projects" ? (
         <>
           <div className="flex-1 flex flex-col justify-between items-center p-6">
             <div className="text-center">
-              <p className="text-sm font-medium text-text dark:text-dk-text">
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:underline"
+                aria-label={`Click to open the page for ${item.title}`}
+              >
                 {item.title}
-              </p>
-              <p className="text-xl font-semibold text-gray-900 mt-2">
-                {item.description}
-              </p>
+                <p className="text-xl font-semibold text-gray-900 mt-2">
+                  {item.description}
+                </p>
+              </a>
             </div>
             <div className="mt-6 flex items-center justify-center w-full">
               <div className="flex flex-wrap space-x-2">
@@ -57,15 +60,19 @@ export default function ProjectCard(props: ProjectCardProps) {
         </>
       ) : (
         <div className="flex flex-col items-center justify-center text-center">
-          <h3>
-            {item.published_in}
-          </h3>
-          <p className="text-lg font-semibold text-text dark:text-dk-text mt-2">
+          <h3>{item.published_in}</h3>
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noreferrer"
+            className="text-lg font-semibold text-text dark:text-dk-text mt-2 hover:underline"
+            aria-label={`Click to open the page for ${item.title}`}
+          >
             {item.title}
-          </p>
+          </a>
           <p className="text-sm text-gray-500 mt-2">{item.date}</p>
         </div>
       )}
-    </a>
+    </div>
   );
 }

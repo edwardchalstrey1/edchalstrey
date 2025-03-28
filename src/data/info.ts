@@ -88,6 +88,16 @@ export const info = {
       img_path: "scivision.png",
     },
     {
+      title: "Colouring Britain",
+      description:
+        "A software ecosystem of interoperable tools and utilities for working with computer vision models and data.",
+      link: "https://colouringbritain.org/",
+      github_link: "https://github.com/colouring-cities/colouring-core",
+      tech: ["TypeScript", "React.js", "JavaScript"],
+      img_alt: "Colouring Britain",
+      img_path: "colouring_britain.png",
+    },
+    {
       title: "Solar Panel Detection (Turing Climate Action Call)",
       description:
         "Code for data wrangling to combine a number of geospatial data sources and determine the solar panel assets across the UK.",

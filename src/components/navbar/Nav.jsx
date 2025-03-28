@@ -8,10 +8,10 @@ export default function Nav({ posts }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const navLinks = [
-    { name: "About", href: "/#about" },
     { name: "Projects", href: "/#projects" },
     { name: "Publications", href: "/#publications" },
-    { name: "Blog", href: "/#blog" },
+    // { name: "Blog", href: "/#blog" },
+    { name: "About me", href: "/#about" },
     { name: "Contact", href: "/#contact" },
   ];
 

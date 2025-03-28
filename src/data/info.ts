@@ -78,6 +78,16 @@ export const info = {
       img_path: "dsh.png",
     },
     {
+      title: "Scivision",
+      description:
+        "A software ecosystem of interoperable tools and utilities for working with computer vision models and data.",
+      link: "https://sci.vision/",
+      github_link: "https://github.com/alan-turing-institute/scivision",
+      tech: ["Python", "React.js", "JavaScript"],
+      img_alt: "Scivision",
+      img_path: "scivision.png",
+    },
+    {
       title: "Solar Panel Detection (Turing Climate Action Call)",
       description:
         "Code for data wrangling to combine a number of geospatial data sources and determine the solar panel assets across the UK.",

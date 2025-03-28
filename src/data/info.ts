@@ -62,8 +62,8 @@ export const info = {
       description:
         "Interactive maps for historical borders across time; enabling research into the evolution of human societies.",
       link: "https://seshat-db.com/core/world_map",
-      github_link: "https://github.com/Seshat-Global-History-Databank/seshat",
-      tech: ["Django", "Python", "PostgreSQL", "Leaflet.js"],
+      github_link: "https://github.com/orgs/Seshat-Global-History-Databank/repositories",
+      tech: ["Django", "Python", "PostgreSQL", "Leaflet.js", "REST API"],
       img_alt: "Seshat Global History Databank",
       img_path: "seshat.png",
     },

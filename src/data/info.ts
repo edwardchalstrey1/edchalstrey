@@ -117,6 +117,16 @@ export const info = {
       img_alt: "",
       img_path: "",
     },
+    {
+      title: "WAYS: What Aren't You Seeing",
+      description:
+        "Enhancing everyday visualisation practice through generative and evaluative design tools for data scientists.",
+      link: "https://github.com/WarwickCIM/ways-py",
+      github_link: "https://github.com/WarwickCIM/ways-py",
+      tech: ["Python", "Jupyter"],
+      img_alt: "",
+      img_path: "",
+    },
   ],
 
   publications: [

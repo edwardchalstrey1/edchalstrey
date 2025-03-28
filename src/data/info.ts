@@ -77,6 +77,16 @@ export const info = {
       img_alt: "Data Safe Haven",
       img_path: "dsh.png",
     },
+    {
+      title: "Solar Panel Detection (Turing Climate Action Call)",
+      description:
+        "Code for data wrangling to combine a number of geospatial data sources and determine the solar panel assets across the UK.",
+      link: "https://www.turing.ac.uk/research/research-projects/solar-nowcasting-machine-vision",
+      github_link: "https://github.com/alan-turing-institute/solar-panel-detection",
+      tech: ["Python", "Jupyter", "PostgreSQL"],
+      img_alt: "",
+      img_path: "",
+    },
   ],
 
   publications: [

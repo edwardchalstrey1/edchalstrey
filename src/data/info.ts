@@ -97,6 +97,16 @@ export const info = {
       img_alt: "",
       img_path: "",
     },
+    {
+      title: "ReadabiliPy",
+      description:
+        "ReadabiliPy contains a Python wrapper for Mozilla's Readability.js Node.js package, as well as article extraction routines written in pure Python.",
+      link: "https://github.com/alan-turing-institute/ReadabiliPy",
+      github_link: "https://github.com/alan-turing-institute/ReadabiliPy",
+      tech: ["Python", "HTML"],
+      img_alt: "",
+      img_path: "",
+    },
   ],
 
   publications: [

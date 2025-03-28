@@ -98,9 +98,9 @@ export const info = {
   ],
 
   contact: {
-    email: "bart@thesimpsons.com",
-    linkedin: "https://www.linkedin.com/in/bartsimpsonfake",
-    github: "https://www.github.com/gio-del",
-    twitter: "https://www.twitter.com/bartsimpsonfake",
+    email: "edwardchalstrey@gmail.com",
+    linkedin: "https://www.linkedin.com/in/edchalstrey/",
+    github: "https://github.com/edwardchalstrey1",
+    twitter: "https://x.com/EChalstrey",
   },
 };

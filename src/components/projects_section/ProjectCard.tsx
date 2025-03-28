@@ -14,8 +14,8 @@ export default function ProjectCard(props: ProjectCardProps) {
     <div
       className={`flex flex-col items-center justify-between border border-gray-300 ${
         type === "projects"
-          ? "bg-gray-100 dark:bg-dk-primary rounded-lg h-full p-4"
-          : "bg-gray-100 dark:bg-dk-primary rounded-md p-4"
+          ? "bg-gray-100 dark:bg-dk-primary rounded-lg min-h-full p-4"
+          : "bg-gray-100 dark:bg-dk-primary rounded-md min-h-full p-4"
       } hover:shadow-lg transition-shadow`}
       aria-label={`Title of the ${type}: ${item.title}`}
     >
@@ -31,10 +31,10 @@ export default function ProjectCard(props: ProjectCardProps) {
                 aria-label={`Click to open the page for ${item.title}`}
               >
                 {item.title}
-                <p className="text-xl font-semibold text-gray-900 mt-2">
-                  {item.description}
-                </p>
               </a>
+              <p className="text-xl font-semibold text-gray-900 mt-2">
+                {item.description}
+              </p>
             </div>
             <div className="mt-6 flex items-center justify-center w-full">
               <div className="flex flex-wrap space-x-2">

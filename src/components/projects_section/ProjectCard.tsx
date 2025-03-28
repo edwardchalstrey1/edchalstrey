@@ -31,10 +31,10 @@ export default function ProjectCard(props: ProjectCardProps) {
                 aria-label={`Click to open the page for ${item.title}`}
               >
                 {item.title}
+                <p className="text-xl font-semibold text-gray-900 mt-2">
+                  {item.description}
+                </p>
               </a>
-              <p className="text-xl font-semibold text-gray-900 mt-2">
-                {item.description}
-              </p>
             </div>
             <div className="mt-6 flex items-center justify-center w-full">
               <div className="flex flex-wrap space-x-2">

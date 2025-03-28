@@ -87,6 +87,16 @@ export const info = {
       img_alt: "",
       img_path: "",
     },
+    {
+      title: "CHANCE Water Distribution Network Web App",
+      description:
+        "A web app to visualise the spread of pollution through water networks.",
+      link: "https://github.com/alan-turing-institute/chance-water-distribution",
+      github_link: "https://github.com/alan-turing-institute/chance-water-distribution",
+      tech: ["Bokeh", "Python", "Jupyter", "Docker"],
+      img_alt: "",
+      img_path: "",
+    },
   ],
 
   publications: [

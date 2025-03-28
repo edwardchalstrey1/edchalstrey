@@ -48,6 +48,17 @@ export default function ProjectCard(props: ProjectCardProps) {
                 ))}
               </div>
             </div>
+            <div className="flex justify-between items-center mt-4">
+              <a
+                href={item.github_link}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm text-gray-500 hover:underline"
+                aria-label={`Click to open the GitHub page for ${item.title}`}
+              >
+                GitHub
+              </a>
+            </div>
           </div>
           <div className="flex-shrink-0 w-full overflow-hidden">
             <LazyLoadImage

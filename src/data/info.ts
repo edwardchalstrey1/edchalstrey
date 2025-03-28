@@ -52,6 +52,7 @@ export const info = {
       description:
         "ML Python package for creating fast, accurate emulators of complex simulations.",
       link: "https://www.autoemulate.com/",
+      github_link: "https://github.com/alan-turing-institute/autoemulate",
       tech: ["Python", "Pytorch", "Astro.js"],
       img_alt: "Autoemulate",
       img_path: "/autoemulate.png",
@@ -61,6 +62,7 @@ export const info = {
       description:
         "Interactive maps for historical borders across time; enabling research into the evolution of human societies.",
       link: "https://seshat-db.com/core/world_map",
+      github_link: "https://github.com/Seshat-Global-History-Databank/seshat",
       tech: ["Django", "Python", "PostgreSQL", "Leaflet.js"],
       img_alt: "Seshat Global History Databank",
       img_path: "seshat.png",
@@ -70,6 +72,7 @@ export const info = {
       description:
         "Infrastructure-as-code tools for Trusted Research Environments, enabling researchers to work with sensitive data.",
       link: "https://data-safe-haven.readthedocs.io/",
+      github_link: "https://github.com/alan-turing-institute/data-safe-haven",
       tech: ["Pulumi", "Powershell", "Azure", "Docker"],
       img_alt: "Data Safe Haven",
       img_path: "dsh.png",

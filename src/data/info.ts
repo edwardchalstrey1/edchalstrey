@@ -3,10 +3,10 @@ export const info = {
   brief_description:
     "Developer and research scientist.",
   role: "Research Data Scientist",
-  picture: "/pic.png",
-  picture_alt: "Bart Simpson",
+  picture: "/edchalstrey/pic.png",
+  picture_alt: "Ed Chalstrey",
   location: "London, UK",
-  cv: "/resume.pdf",
+  cv: "/edchalstrey/resume.pdf",
 
   about: {
     description: `I'm a developer with a background in academic research, currently employed at The Alan Turing Institute in London. My career has spanned a variety of research disciplines and has given me a broad technical skillset in data science and software engineering. I'm passionate about using technology to solve complex problems and make a positive impact on society. On my website, you can find links to my software repositories, notebooks, publications and blogs, as well as episode links for The Turing Podcast which I co-host.`,
@@ -55,7 +55,7 @@ export const info = {
       github_link: "https://github.com/alan-turing-institute/autoemulate",
       tech: ["Python", "Pytorch", "Astro.js"],
       img_alt: "Autoemulate",
-      img_path: "/autoemulate.png",
+      img_path: "/edchalstrey/autoemulate.png",
     },
     {
       title: "Seshat Global History Databank",
@@ -65,7 +65,7 @@ export const info = {
       github_link: "https://github.com/orgs/Seshat-Global-History-Databank/repositories",
       tech: ["Django", "Python", "PostgreSQL", "Leaflet.js", "REST API"],
       img_alt: "Seshat Global History Databank",
-      img_path: "seshat.png",
+      img_path: "/edchalstrey/seshat.png",
     },
     {
       title: "Data Safe Haven",
@@ -75,7 +75,7 @@ export const info = {
       github_link: "https://github.com/alan-turing-institute/data-safe-haven",
       tech: ["Pulumi", "Powershell", "Azure", "Docker"],
       img_alt: "Data Safe Haven",
-      img_path: "dsh.png",
+      img_path: "/edchalstrey/dsh.png",
     },
     {
       title: "Scivision",
@@ -85,7 +85,7 @@ export const info = {
       github_link: "https://github.com/alan-turing-institute/scivision",
       tech: ["Python", "React.js", "JavaScript"],
       img_alt: "Scivision",
-      img_path: "scivision.png",
+      img_path: "/edchalstrey/scivision.png",
     },
     {
       title: "Colouring Britain",
@@ -95,7 +95,7 @@ export const info = {
       github_link: "https://github.com/colouring-cities/colouring-core",
       tech: ["TypeScript", "React.js", "JavaScript"],
       img_alt: "Colouring Britain",
-      img_path: "colouring_britain.png",
+      img_path: "/edchalstrey/colouring_britain.png",
     },
     {
       title: "Solar Panel Detection (Turing Climate Action Call)",

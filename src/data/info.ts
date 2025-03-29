@@ -158,6 +158,12 @@ export const info = {
       date: "2020",
       link: "https://www.nature.com/articles/s41597-020-00739-0",
     },
+    {
+      published_in: "Birkbeck, University of London, MSc Thesis",
+      title: "Open Targets Platform: Multi-Target Search. A tool for the prediction of drug efficacy based on pharmacological targets.",
+      date: "2019",
+      link: "masters_thesis.pdf",
+    },
   ],
 
   contact: {

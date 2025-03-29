@@ -13,6 +13,7 @@ export default function Nav({ posts }) {
     // { name: "Blog", href: "/#blog" },
     { name: "About me", href: "/#about" },
     { name: "Contact", href: "/#contact" },
+    { name: "Podcast", href: "https://turing.podbean.com/" },
   ];
 
   const extractInitials = (name) => {

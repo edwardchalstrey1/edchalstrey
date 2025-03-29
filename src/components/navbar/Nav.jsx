@@ -8,11 +8,11 @@ export default function Nav({ posts }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const navLinks = [
-    { name: "Projects", href: "/#projects" },
-    { name: "Publications", href: "/#publications" },
-    // { name: "Blog", href: "/#blog" },
-    { name: "About me", href: "/#about" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Projects", href: "/edchalstrey/#projects" },
+    { name: "Publications", href: "/edchalstrey/#publications" },
+    // { name: "Blog", href: "/edchalstrey/#blog" },
+    { name: "About me", href: "/edchalstrey/#about" },
+    { name: "Contact", href: "/edchalstrey/#contact" },
     { name: "Podcast", href: "https://turing.podbean.com/" },
   ];
 

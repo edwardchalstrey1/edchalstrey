@@ -181,6 +181,12 @@ export const info = {
       link: "https://satre-specification.readthedocs.io/",
     },
     {
+      published_in: "The Alan Turing Institute Website",
+      title: "Developing and Publishing Code for Trusted Research Environments: Best Practices and Ways of Working",
+      date: "2021",
+      link: "https://www.turing.ac.uk/news/publications/developing-and-publishing-code-trusted-research-environments",
+    },
+    {
       published_in: "arxiv: Computer Science > Cryptography and Security",
       title: "Digital identity architectures: comparing goals and vulnerabilities",
       date: "2023",

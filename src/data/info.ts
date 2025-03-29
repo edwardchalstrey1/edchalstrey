@@ -137,6 +137,16 @@ export const info = {
       img_alt: "",
       img_path: "",
     },
+    {
+      title: "The Sainsbury Lab: Bioinformatics internship project",
+      description:
+        "Genetic algorithm to locate phenotype-causing SNPs in backcrossed mutagenized plant genomes via choosing the correct permutation of unordered sequence contigs.",
+      link: "https://github.com/edwardchalstrey1/fragmented_genome_with_snps",
+      github_link: "https://github.com/edwardchalstrey1/fragmented_genome_with_snps",
+      tech: ["Ruby", "R"],
+      img_alt: "",
+      img_path: "",
+    },
   ],
 
   publications: [

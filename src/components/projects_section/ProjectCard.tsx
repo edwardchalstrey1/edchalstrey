@@ -61,12 +61,12 @@ export default function ProjectCard(props: ProjectCardProps) {
             </div>
           </div>
           <div className="flex-shrink-0 w-full overflow-hidden">
-            <LazyLoadImage
+            {/* <LazyLoadImage
               className="w-full h-auto object-cover"
               src={item.img_path}
               alt={item.img_alt}
               effect="blur"
-            />
+            /> */}
           </div>
         </>
       ) : (

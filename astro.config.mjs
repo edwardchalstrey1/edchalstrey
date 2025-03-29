@@ -8,10 +8,10 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  base: '/edchalstrey/',
+  base: 'edchalstrey',
+  site: 'https://edwardchalstrey1.github.io',
   markdown: {
     rehypePlugins: [rehypeAccessibleEmojis],
   },
-  site: 'https://astro-portfolio-template.pages.dev',
   integrations: [tailwind(), react(), robotsTxt(), sitemap()]
 });

@@ -90,7 +90,7 @@ export const info = {
     {
       title: "Colouring Britain",
       description:
-        "A software ecosystem of interoperable tools and utilities for working with computer vision models and data.",
+        "Interactive maps for the crowdsourcing of urban environment data.",
       link: "https://colouringbritain.org/",
       github_link: "https://github.com/colouring-cities/colouring-core",
       tech: ["TypeScript", "React.js", "JavaScript"],
